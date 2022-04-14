@@ -2,7 +2,7 @@
 const list = "";
 
 const from = window.location.pathname.slice(1);
-const to = JSON.parse(list).find((item) => item?.from === from)?.to;
+const to = JSON.parse(window.atob(list)).find((item) => item?.from === from)?.to;
 
 if (from && to) {
   console.log(`Redirecting from ${from} to ${to}`);
