@@ -3,7 +3,11 @@
   <head>
     <title>Bridge 2 AI - 404</title>
 
-    <script src="./redirect.js"></script>
+    <script id="script" src="./redirect.js"></script>
+    <script>
+      // force browser to not load redirect script from cache
+      document.getElementById("script").src += "?v=" + Date.now();
+    </script>
   </head>
 
   <body>
