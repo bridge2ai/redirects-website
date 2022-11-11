@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Bridge 2 AI - 404</title>
+    <title>404 | Bridge2AI </title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXPCHET4Z2"></script>
     <script>
@@ -11,14 +11,25 @@
 
       gtag('config', 'G-TXPCHET4Z2');
     </script>
-    <script id="script" src="./redirect.js"></script>
+
     <script>
-      // force browser to not load redirect script from cache
-      document.getElementById("script").src += "?v=" + Date.now();
+      const script = document.createElement("script");
+      script.src = "redirect.js?v=" + Date.now(); // bust cache
+      script.async = false;
+      document.currentScript.after(script);
     </script>
+
+    <style>
+      body {
+        margin: 20px;
+        font-family: sans-serif;
+        font-size: 14pt;
+        line-height: 2;
+      }
+    </style>
   </head>
 
   <body>
-    404
+    Redirecting...
   </body>
 </html>

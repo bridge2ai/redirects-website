@@ -1,3 +1,4 @@
-# website
+# Url Redirects with GitHub
 
-This is just for tracking redirects it is not a website in its own right
+_Counterpart to the [redirects repo](../../../redirects)._
+_See there for more information._
